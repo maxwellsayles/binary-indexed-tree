@@ -1,20 +1,31 @@
-{-
+{- |
+Module      : Data.BinaryIndexedTree
+Description : Binary Indexed Trees (a.k.a. Fenwick Trees)
+Copyright   : (c) 2012 Maxwell Sayles.
+License     : LGPL
+
+Maintainer  : maxwellsayles@gmail.com
+Stability   : stable
+Portability : portable
+
 Implements persistent binary indexed trees (or Fenwick Trees)
-in O(logn) for increment and lookup and O(n) for creation.
+in /O(logn)/ for increment and lookup and /O(n)/ for creation.
 
-Index i in the tree represents the sum of all values of
-indexes j<=i for some array.
+Index /i/ in the tree represents the sum of all values of
+indexes /j<=i/ for some array.
 
-The idea is that for k bits, we parse the index i from msb
-to lsb and move left/right on the tree for 0/1.
+The idea is that for /k/ bits, we parse the index /i/ from msb
+to lsb and move left\/right on the tree for 0\/1.
 
 For a read, we accumulate the values in the tree where the
 binary representation of the index contains a 1. (The
 technique is similar to binary exponentiation.)
 
-For an increment (update), we should increment parent nodes
+For an increment, we should increment parent nodes
 in the tree whose corresponding binary index representation
-is >= than the index i.
+is />=/ than the index /i/.
+
+/Note: I was unable to find the algorithm used here in the literature./
 -}
 
 module Data.BinaryIndexedTree

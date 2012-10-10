@@ -1,6 +1,19 @@
-{-
+{-|
+Module      : Data.BinaryIndexedTree.ST
+Description : Binary Indexed Trees (a.k.a. Fenwick Trees)
+Copyright   : (c) 2012 Maxwell Sayles.
+License     : LGPL
+
+Maintainer  : maxwellsayles@gmail.com
+Stability   : stable
+Portability : portable
+
 Implements mutable binary indexed trees (a.k.a. Fenwick Trees)
 in O(logn) for increment and lookup and O(n) for creation.
+
+Original concept from Peter M. Fenwick (1994)
+\"/A new data structure for cumulative frequency tables/\"
+<http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.14.8917>.
 
 Index i in the tree represents the sum of all values of
 indexes j<=i for some array.

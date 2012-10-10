@@ -21,7 +21,8 @@ Author:              Maxwell Sayles <maxwellsayles@gmail.com>
 Maintainer:          Maxwell Sayles <maxwellsayles@gmail.com>
 Category:            Data
 Build-type:          Simple
-Cabal-version:       >=1.6
+Stability:           Stable
+Cabal-version:       >= 1.8
 
 Library
   Exposed-modules:   Data.BinaryIndexedTree,
