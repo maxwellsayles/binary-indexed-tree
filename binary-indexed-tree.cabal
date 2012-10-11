@@ -15,7 +15,7 @@ Description:         Binary indexed trees are a data structure on indexes
                      has a smaller constant.
                      .
                      Written by Maxwell Sayles (2012).
-License:             LGPL
+License:             BSD3
 License-file:        LICENSE
 Author:              Maxwell Sayles <maxwellsayles@gmail.com>
 Maintainer:          Maxwell Sayles <maxwellsayles@gmail.com>
