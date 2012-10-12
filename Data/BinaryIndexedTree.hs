@@ -2,7 +2,7 @@
 Module      : Data.BinaryIndexedTree
 Description : Binary Indexed Trees (a.k.a. Fenwick Trees)
 Copyright   : (c) 2012 Maxwell Sayles.
-License     : LGPL
+License     : BSD3
 
 Maintainer  : maxwellsayles@gmail.com
 Stability   : stable
